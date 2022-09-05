@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDayDiamondKata", "NewDayDiamondKata\NewDayDiamondKata.csproj", "{5E382654-8D46-446D-AF7B-0EFC583697B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BFEC2958-479D-49AA-831E-96C7577103EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewDayDiamondKata.UnitTests", "NewDayDiamondKata.UnitTests\NewDayDiamondKata.UnitTests.csproj", "{D659BE16-40BF-4426-8D94-6112F3B829A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E382654-8D46-446D-AF7B-0EFC583697B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E382654-8D46-446D-AF7B-0EFC583697B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E382654-8D46-446D-AF7B-0EFC583697B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E382654-8D46-446D-AF7B-0EFC583697B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D659BE16-40BF-4426-8D94-6112F3B829A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D659BE16-40BF-4426-8D94-6112F3B829A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D659BE16-40BF-4426-8D94-6112F3B829A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D659BE16-40BF-4426-8D94-6112F3B829A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D659BE16-40BF-4426-8D94-6112F3B829A3} = {BFEC2958-479D-49AA-831E-96C7577103EB}
+	EndGlobalSection
+EndGlobal

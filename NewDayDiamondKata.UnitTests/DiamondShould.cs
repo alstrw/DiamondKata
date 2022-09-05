@@ -34,5 +34,21 @@ namespace NewDayDiamondKata.UnitTests
 
             act.Should().Throw<ArgumentException>();
         }
+
+        [Test]
+        public void PrintEqualDiamond_WhenCreatingDiamond_GivenLetterD()
+        {
+            var expectedOutcome = "   A\n" +
+                                       "  B B\n" +
+                                       " C   C\n" +
+                                       "D     D\n" +
+                                       " C   C\n" +
+                                       "  B B\n" +
+                                       "   A";
+
+            var diamond = _sut.Create('D');
+
+            diamond.Should().Be(expectedOutcome);
+        }
     }
 }

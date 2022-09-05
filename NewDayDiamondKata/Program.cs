@@ -6,9 +6,9 @@ using NewDayDiamondKata;
 if (Environment.GetCommandLineArgs().Length < 2) throw new ArgumentException("Please enter a letter"); 
 
 var letter = Environment.GetCommandLineArgs()[1].ToUpperInvariant();
-var diamond = new Diamond().Create(Convert.ToChar(letter));
+var diamond = new Diamond(Convert.ToChar(letter));
 
 Console.WriteLine($"Printing diamond with {letter} as the middle: {Environment.NewLine}");
-Console.WriteLine(diamond);
+Console.WriteLine(diamond.Render());
 Console.ReadKey();
 

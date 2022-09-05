@@ -10,8 +10,17 @@ namespace NewDayDiamondKata
         private const char FirstCharacter = 'A';
         private const char Space = ' ';
         private const char NewLine = '\n';
-        
-        public string Create(char middleCharacter)
+
+        private readonly char _middleCharacter;
+
+        public Diamond(char middleCharacter)
+        {
+            _middleCharacter = middleCharacter;
+        }
+
+        public string Render() => BuildDiamond(_middleCharacter);
+
+        private static string BuildDiamond(char middleCharacter)
         {
             if (middleCharacter.ToString() == "A") return "A";
             if (!char.IsLetter(middleCharacter)) throw new ArgumentException("Input was not a letter");

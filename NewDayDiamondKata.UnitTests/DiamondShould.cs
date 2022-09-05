@@ -12,13 +12,13 @@ namespace NewDayDiamondKata.UnitTests
         [SetUp]
         public void Setup()
         {
-            _sut = new Diamond();
+            _sut = new Diamond('A');
         }
 
         [Test]
-        public void ReturnAWhenInputCharacterIsA()
+        public void ReturnA_WhenCreatingDiamond_GivenInputCharacterIsA()
         {
-            var result = _sut.Create('A');
+            var result = _sut.Render();
 
             result.Should().Be("A");
         }
@@ -28,9 +28,10 @@ namespace NewDayDiamondKata.UnitTests
         [TestCase('.')]
         [TestCase(' ')]
         [TestCase(null)]
-        public void RejectNonLetterChars(char input)
+        public void ThrowArgumentException_WhenCreatingDiamond_GivenInputCharIsNotALetter(char input)
         {
-            Action act = () => _sut.Create(input);
+            var sut = new Diamond(input);
+            Action act = () => sut.Render();
 
             act.Should().Throw<ArgumentException>();
         }
@@ -38,6 +39,8 @@ namespace NewDayDiamondKata.UnitTests
         [Test]
         public void PrintEqualDiamond_WhenCreatingDiamond_GivenLetterD()
         {
+            var sut = new Diamond('D');
+            
             var expectedOutcome = "   A\n" +
                                        "  B B\n" +
                                        " C   C\n" +
@@ -46,7 +49,7 @@ namespace NewDayDiamondKata.UnitTests
                                        "  B B\n" +
                                        "   A";
 
-            var diamond = _sut.Create('D');
+            var diamond = sut.Render();
 
             diamond.Should().Be(expectedOutcome);
         }

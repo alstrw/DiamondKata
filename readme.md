@@ -1,3 +1,11 @@
+### Solution - Alastair Wilkins
+
+Run `diamond.exe [letter]` where [letter] is any character A-Z.
+
+E.g. `diamond.exe G`
+
+Will output a rendered diamond with G in the center.
+
 ### Origin
 
 This kata is based on a post by Seb Rose here: http://claysnow.co.uk/recycling-tests-in-tdd/
